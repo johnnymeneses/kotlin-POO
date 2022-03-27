@@ -1,0 +1,6 @@
+package logica
+
+fun main() {
+
+
+}

@@ -1,5 +1,0 @@
-
-//Impar ou Par ?
-
-
-
