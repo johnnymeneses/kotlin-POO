@@ -1,7 +1,6 @@
 
-/*
-Tabuada
-* */
+// Tabuada
+
 
 fun main() = ex01(10)
 
