@@ -4,6 +4,4 @@ Um motorista deseja colocar no seu tanque X reais de gasolina. Escreva um algori
 */
 
 
-fun Ex07(){
-
-}
+fun Ex07(preco: Float, pagamento: Float) : String = "Voce conseguiu abastecer ${pagamento/preco} litros com R$ $pagamento. O preço atual da gasolina é R$ $preco"
