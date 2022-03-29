@@ -5,6 +5,4 @@ Ex: uma pessoa com 19 anos possui 6935 dias de vida; veja um exemplo de saída: 
 */
 
 
-fun Ex06(){
-
-}
+fun Ex06(nome: String, idade: Int): String = "$nome você já viveu ${idade * 365} dias!"
