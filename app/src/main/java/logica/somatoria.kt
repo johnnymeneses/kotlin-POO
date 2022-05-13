@@ -1,7 +1,0 @@
-package logica
-fun somatoria (){
-
-}
-
-
-

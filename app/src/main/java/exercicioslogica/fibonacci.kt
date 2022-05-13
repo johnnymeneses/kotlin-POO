@@ -1,0 +1,7 @@
+package exercicioslogica
+fun fibonacci (){
+
+}
+
+
+
