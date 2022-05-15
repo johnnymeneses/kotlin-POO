@@ -2,7 +2,7 @@ import exercicioslogica.*
 
 fun main() {
 
-    var exercicio: Int = 7
+    var exercicio: Int = 13
 
 
     //Logica para chamar os exercícios
@@ -15,9 +15,30 @@ fun main() {
         6 -> println(Ex06("Johnny", 37))      //Idade em anos
         7 -> println(Ex07(5.69f,5.69f))     //Preço Gasolina
         8 -> Ex08()
-        9 -> Ex09()
-        10 -> Ex10()
+        13 -> Ex13()                                        //Exemplo de entrada de dados usando o readLine()
+
     }
 
 
 }
+
+
+/*
+     Basic syntax
+    Package definition and imports
+    Program entry point
+    Print to the standard output
+    Functions
+    Variables
+    Creating classes and instances
+    Comments
+    String templates
+    Conditional expressions
+    for loop
+    while loop
+    when expression
+    Ranges
+    Collections
+    Nullable values and null checks
+    Type checks and automatic casts
+* */

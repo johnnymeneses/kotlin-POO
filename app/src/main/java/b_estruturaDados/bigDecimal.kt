@@ -1,4 +1,4 @@
-package estruturaDados
+package b_estruturaDados
 
 import java.math.BigDecimal
 import java.math.RoundingMode

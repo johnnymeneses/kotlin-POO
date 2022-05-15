@@ -1,4 +1,4 @@
-package orientacaoObjeto
+package c_orientacaoObjeto
 
 //Classe
 
@@ -55,11 +55,11 @@ class Medicamento2(val formula: String, val posologia: String)
 class Medicamento3(val formula: String, val posologia: String) {
 
     init {
-        require(formula.trim().lenght > 0) {
+        require(formula.trim().length > 0) {
             "Informe uma fórmula"
         }
 
-        require(posologia.trim().lenght > 0)
+        require(posologia.trim().length > 0)
         {
             "Informe uma posologia"
         }

@@ -5,3 +5,15 @@ Considere que o salário líquido é igual ao salário bruto descontando-se 10% 
  */
 
 
+fun ex20(horaNormal: Int, horaExtra: Int){
+
+    val valorHoraNormal = 10
+    val valorHoraExtra = 10
+
+    val salarioBruto = (horaNormal*valorHoraNormal)+(horaExtra*valorHoraExtra)
+    val imposto = 0.1
+    val salarioLiquido = salarioBruto - (salarioBruto*imposto)
+
+    println("Horas Trabalhadas: $horaNormal | Horas Extras: $horaExtra | Valor à receber  R$ $salarioLiquido ja descontando ${salarioBruto-salarioLiquido} de imposto")
+
+}

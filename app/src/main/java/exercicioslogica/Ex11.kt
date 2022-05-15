@@ -6,3 +6,21 @@ médias e grandes referentes a uma venda, e a máquina informe quanto será o va
 
 */
 
+
+fun ex11(p: Int, m: Int, g: Int) {
+    val pPreco = 10
+    val mPreco = 12
+    val gPreco = 15
+
+    var total = 0
+
+
+    if (p > 0) total += pPreco * p
+
+    if (m > 0) total += mPreco * m
+
+    if (g > 0) total += gPreco * g
+
+    println("O valor das vendas foi de R$ $total ")
+
+}

@@ -3,6 +3,9 @@ Entrar com o dia e o mês de uma data e informar quantos dias se passaram desde 
 */
 
 
-fun Ex09(){
+fun ex09(dia: Int, mes: Int) {
 
+    var total = ((mes - 1) * 30) + dia
+
+    println("Já se passaram $total dias")
 }

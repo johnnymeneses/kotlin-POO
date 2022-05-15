@@ -1,4 +1,4 @@
-package estruturaDados
+package b_estruturaDados
 
 fun testeArray(){
 

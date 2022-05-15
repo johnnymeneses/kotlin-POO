@@ -1,5 +1,5 @@
 package exceptions
-
+/*
 Exemplo
 
 ```kotlin
@@ -84,4 +84,4 @@ fun teste2()
     println("Terminou")
 
 }
-```
+```*/

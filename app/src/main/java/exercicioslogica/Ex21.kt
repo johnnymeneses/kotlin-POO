@@ -4,3 +4,12 @@ No pé direito do frango há um anel com um chip de identificação; no pé esqu
  Sabendo que o anel com chip custa R$4,00 e o anel de alimento custa R$3,50, faça um algoritmo para calcular o gasto total da granja para marcar todos os seus frangos.
 * */
 
+
+fun chipFrango(frango: Int){
+    var total = (frango*4) + (frango*7)
+
+    println("Para o total de $frango frangos, será gasto R$ $total com chips")
+
+
+
+}
