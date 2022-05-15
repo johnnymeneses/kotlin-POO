@@ -1,4 +1,4 @@
-package exceptions
+package f_exceptions
 /*
 Exemplo
 

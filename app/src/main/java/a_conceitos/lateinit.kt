@@ -17,3 +17,10 @@ class Pessoa{
     }
 
 }
+
+
+fun iniciaTardia() {
+
+    val p = Pessoa()
+    p.geradorDeNome()
+}
