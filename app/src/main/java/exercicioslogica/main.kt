@@ -1,6 +1,0 @@
-package exercicioslogica
-
-fun main() {
-
-
-}

@@ -1,4 +1,4 @@
-import exercicioslogica.*
+import d_exercicios_logica.*
 
 fun main() {
 

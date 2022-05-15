@@ -1,7 +1,0 @@
-package exercicioslogica
-fun numerosPrimos (){
-
-}
-
-
-
