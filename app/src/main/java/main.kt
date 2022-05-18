@@ -2,7 +2,7 @@ import d_exercicios_logica.*
 
 fun main() {
 
-    var exercicio: Int = 13
+    var exercicio: Int = 20
 
 
     //Logica para chamar os exercícios
@@ -16,6 +16,7 @@ fun main() {
         7 -> println(Ex07(5.69f,5.69f))     //Preço Gasolina
         8 -> Ex08()
         13 -> Ex13()                                        //Exemplo de entrada de dados usando o readLine()
+        20 ->Ex20(15,20)            //Horas Extras
 
     }
 
