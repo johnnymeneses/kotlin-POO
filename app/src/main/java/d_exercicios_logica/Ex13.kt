@@ -4,11 +4,11 @@ package d_exercicios_logica
 
 
 fun Ex13() {
-//    val nome = readLine()
-//    println("Olá, meu nome é $nome")
+    val nome = readLine()
+    println("Olá, meu nome é $nome")
 
     //Exemplo de Soma 4 6 saida: 10
-    val (a, b) = readLine()!!.split(' ')
-    println(a.toInt() + b.toInt())
+//    val (a, b) = readLine()!!.split(' ')
+//    println(a.toInt() + b.toInt())
 }
 

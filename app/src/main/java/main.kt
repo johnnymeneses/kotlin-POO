@@ -2,7 +2,7 @@ import d_exercicios_logica.*
 
 fun main() {
 
-    var exercicio: Int = 14
+    var exercicio: Int = 13
 
 
     //Logica para chamar os exercícios
