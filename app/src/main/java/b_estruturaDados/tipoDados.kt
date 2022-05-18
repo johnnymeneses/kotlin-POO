@@ -15,7 +15,7 @@ Byte    8
 fun conversaoValores() {
 
     val n1: Byte = 100
-    teste(1 * n1)
+//    /teste(1 * n1)
 
     val n2: Double = Double.MAX_VALUE
     val b2: Byte = n2.toInt().toByte()
@@ -45,6 +45,6 @@ fun conversaoValores() {
 }
 
 
-fun teste(n1: Int) {
-
+fun main(){
+    conversaoValores()
 }
