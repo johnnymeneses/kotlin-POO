@@ -2,7 +2,7 @@ import d_exercicios_logica.*
 
 fun main() {
 
-    var exercicio = 41
+    var exercicio = 42
 
 
     //Logica para chamar os exercícios
@@ -20,6 +20,7 @@ fun main() {
         20 -> Ex20(15, 20)            //Horas Extras
         40 -> Ex40()                                    //Exercicio For - Udemy
         41 -> Ex41()                                    //Exercicio For - Udemy
+        42 -> Ex42()                                    //Exercicio For - Udemy
 
     }
 
