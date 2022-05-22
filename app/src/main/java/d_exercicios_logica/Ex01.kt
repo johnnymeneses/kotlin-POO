@@ -7,3 +7,4 @@ fun Ex01(num: Int) {
         println("$index * $num = " + index * num)
     }
 }
+
