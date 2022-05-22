@@ -2,7 +2,7 @@ import d_exercicios_logica.*
 
 fun main() {
 
-    var exercicio = 45
+    var exercicio = 46
 
 
     //Logica para chamar os exercícios
@@ -24,6 +24,7 @@ fun main() {
         43 -> Ex43()                                        //Exercicio For Somatoria - Udemy
         44 -> Ex44(5)                                   //Exercicio For #### - Udemy
         45 -> Ex45()                                   //Exercicio doWhile - Udemy
+        46 -> Ex46()                                   //Exercicio doWhile - FizzBuzz
 
     }
 
