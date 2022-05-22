@@ -2,7 +2,7 @@ import d_exercicios_logica.*
 
 fun main() {
 
-    var exercicio = 42
+    var exercicio = 45
 
 
     //Logica para chamar os exercícios
@@ -16,11 +16,14 @@ fun main() {
         7 -> println(Ex07(5.69f, 5.69f))     //Preço Gasolina
         8 -> Ex08()
         13 -> Ex13()                                           //Exemplo de entrada de dados usando o readLine()
-        14 -> Ex14(5000.0)                              //Aumento de Salario
-        20 -> Ex20(15, 20)            //Horas Extras
-        40 -> Ex40()                                    //Exercicio For - Udemy
-        41 -> Ex41()                                    //Exercicio For - Udemy
-        42 -> Ex42()                                    //Exercicio For - Udemy
+        14 -> Ex14(5000.0)                            //Aumento de Salario
+        20 -> Ex20(15, 20)          //Horas Extras
+        40 -> Ex40()                                        //Exercicio For - Udemy
+        41 -> Ex41()                                        //Exercicio For - Udemy
+        42 -> Ex42()                                        //Exercicio For - Udemy
+        43 -> Ex43()                                        //Exercicio For Somatoria - Udemy
+        44 -> Ex44(5)                                   //Exercicio For #### - Udemy
+        45 -> Ex45()                                   //Exercicio doWhile - Udemy
 
     }
 
