@@ -1,5 +1,8 @@
 package b_estruturaDados
 
+import java.math.BigDecimal
+import java.math.BigInteger
+
 // Tipo de Dados
 
 /**
@@ -45,10 +48,34 @@ fun conversaoValores() {
 }
 
 
+fun maxMinValue(){
+
+    println("Char MAX VALUE: ${Char.MAX_VALUE}")
+    println("Char MIN VALUE: ${Char.MIN_VALUE}")
+    println("")
+    println("")
+    println("Int MAX VALUE: ${Int.MAX_VALUE}")
+    println("Int MIN VALUE: ${Int.MIN_VALUE}")
+    println("")
+    println("Long MAX VALUE: ${Long.MAX_VALUE}")
+    println("Long MIN VALUE: ${Long.MIN_VALUE}")
+    println("")
+    println("Short MAX VALUE: ${Short.MAX_VALUE}")
+    println("Short MIN VALUE: ${Short.MIN_VALUE}")
+    println("")
+    println("Double MAX VALUE: ${Double.MAX_VALUE}")
+    println("Double MIN VALUE: ${Double.MIN_VALUE}")
+    println("")
+    println("Byte MAX VALUE: ${Byte.MAX_VALUE}")
+    println("Byte MIN VALUE: ${Byte.MIN_VALUE}")
+
+}
+
+
 fun main(){
     //    conversaoValores()
+    maxMinValue()
 
-        println(Int.MAX_VALUE)
 
 
 }
