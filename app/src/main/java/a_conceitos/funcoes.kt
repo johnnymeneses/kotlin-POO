@@ -1,5 +1,7 @@
 package a_conceitos
 
+import kotlin.math.sin
+
 //Funções
 
 //Função é uma pequena parte do programa que possui uma responsabilidade específica e pode ser usada quando necessário
@@ -90,9 +92,7 @@ fun endereco(
 //stante úteis para a generalização de funções e tratamento de erros
 
 
-fun main(){
-    ordemSuperior()
-}
+
 
 fun ordemSuperior(){
 
@@ -114,9 +114,34 @@ fun ordemSuperior(){
     fun sum (a:Int, b: Int) = a.plus(b)
     fun multiplica (a:Int, b: Int) = a*b
 
-fun calculate(n1: Int, n2: Int,operation:(Int,Int)->Int):Int{
+
+fun calculate(n1: Int, n2: Int,operation:(Int,Int)->Int)  = operation (n1,n2)
+
+
+fun calculate2(n1: Int, n2: Int,operation:(Int,Int)->Int):Int{
     val result = operation (n1,n2)
     return result
 }
 
 //Operation:(Int,Int)->Int):Int espressão Lamba
+
+
+
+//Função Single Line
+fun singleLine(name: String, lastame: String) = println("$name $lastame")
+
+
+//Funções que só podem ser chamadas por determinado tipo
+//prefixo fun Tipo.nomeDaFuncao()
+
+fun String.randomCapitalizedLetter()=
+    this[(0..this.length-1).random()].uppercaseChar()
+
+
+
+fun main(){
+    var jo = "Pedro"
+
+    println(jo.randomCapitalizedLetter())
+
+}
