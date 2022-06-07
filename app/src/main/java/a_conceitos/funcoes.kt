@@ -44,19 +44,17 @@ fun qtdeDias(dia: Int, mes: Int) {
 fun divisao(a: Float, b: Float) = a / b
 
 
-
-
 //FUNÇÕES STRING
 
-fun str1(){
+fun str1() {
     val str = "Programação Kotlin."
     val str2 = "A                               B"
     println("Tamanho da String: ${str.length}")
     println("Posição 4: ${str[4]}")
     println("Começa com Pro ${str.startsWith("Pro")}") //retorno booleano
     println("Termina com ABC ${str.endsWith("ABC")}")//retorno booleano
-    println("Posicao 2 a 4 ${str.substring(2,4)}")
-    println("Trocando a por z ${str.replace("a","z")}")
+    println("Posicao 2 a 4 ${str.substring(2, 4)}")
+    println("Trocando a por z ${str.replace("a", "z")}")
     println("Tudo minusculo ${str.lowercase()}")
     println("Tudo maisculo ${str.uppercase()}")
     println("Sem espaços em branco ${str2.trim()}") //funcionou mas não funcionou
@@ -67,7 +65,7 @@ fun str1(){
 fun parametros() {
 
 //    endereco("Nome Rua","São Paulo","SP","01014000","145")
-    endereco(cidade = "São Paulo", estado="SP",cep="54654")
+    endereco(cidade = "São Paulo", estado = "SP", cep = "54654")
 
 }
 
@@ -75,10 +73,50 @@ fun parametros() {
 //Em alguns casos, as funções podem receber muitos paaremtros. Como lidar com o caso de ser necessário manter
 //todos os parametros , mas nao ter todos disponíveis na chamada: receber um valor Default
 
-fun endereco(rua: String="Rua", cidade: String, estado: String, cep: String, numero: String="1515"){
+fun endereco(
+    rua: String = "Rua",
+    cidade: String,
+    estado: String,
+    cep: String,
+    numero: String = "1515"
+) {
     println("Rua $rua")
     println("Cidade: $cidade, $estado, - $cep")
 
 }
 
+//::Funções ordem superior
+//Recebem outra função ou lambda por parâmetro
+//stante úteis para a generalização de funções e tratamento de erros
 
+
+fun main(){
+    ordemSuperior()
+}
+
+fun ordemSuperior(){
+
+    var x: Int
+    var y: Int
+    var z: Int
+
+    x = calculate(12, 4, ::sum)
+    y = calculate(12, 4, ::multiplica)
+    z = calculate(50,2) {a,b -> a/b}
+
+
+    println(x)
+    println(y)
+    println(z)
+
+
+}
+    fun sum (a:Int, b: Int) = a.plus(b)
+    fun multiplica (a:Int, b: Int) = a*b
+
+fun calculate(n1: Int, n2: Int,operation:(Int,Int)->Int):Int{
+    val result = operation (n1,n2)
+    return result
+}
+
+//Operation:(Int,Int)->Int):Int espressão Lamba

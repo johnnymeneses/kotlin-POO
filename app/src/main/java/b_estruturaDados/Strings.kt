@@ -45,6 +45,21 @@ fun branco() {
     // está black mas não empty
 }
 
+//FUNÇÕES STRING
 
+fun str1(){
+    val str = "Programação Kotlin."
+    val str2 = "A                               B"
+    println("Tamanho da String: ${str.length}")
+    println("Posição 4: ${str[4]}")
+    println("Começa com Pro ${str.startsWith("Pro")}") //retorno booleano
+    println("Termina com ABC ${str.endsWith("ABC")}")//retorno booleano
+    println("Posicao 2 a 4 ${str.substring(2,4)}")
+    println("Trocando a por z ${str.replace("a","z")}")
+    println("Tudo minusculo ${str.lowercase()}")
+    println("Tudo maisculo ${str.uppercase()}")
+    println("Sem espaços em branco ${str2.trim()}") //funcionou mas não funcionou
+
+}
 
 
