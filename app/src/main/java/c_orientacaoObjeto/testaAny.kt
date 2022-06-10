@@ -16,3 +16,7 @@ fun testaAny() {
     println(endereco.toString()) //br.com.johnny.bytebank.modelo.Endereco@7cca494b
     println(enderecoNovo.toString()) //br.com.johnny.bytebank.modelo.Endereco@7ba4f24f
 }
+
+fun main(){
+    println("Aula de OO")
+}
