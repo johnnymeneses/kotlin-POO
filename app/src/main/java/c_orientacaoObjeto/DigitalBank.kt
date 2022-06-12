@@ -61,3 +61,6 @@ fun main() {
 
 
 }
+
+
+//Dataclass: Armazenar dados que uma vez inicializados, nao podemos mudá-lo | armazer o estado do objeto
