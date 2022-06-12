@@ -1,5 +1,7 @@
 package c_orientacaoObjeto
 
+import java.math.BigDecimal
+
 
 class Pessoa {
 
@@ -8,7 +10,7 @@ class Pessoa {
     var cpf: String = "123.456.789-00" //Campo Privado
         private set
 
-    fun alteraCPF(novoCpf: String){
+    fun alteraCPF(novoCpf: String) {
         cpf = novoCpf
     }
 
@@ -20,14 +22,23 @@ class Pessoa {
     fun uneNomeCPF() = "$nome e $cpf"
 
 
-
-
-
 }
 
 class Bank {}
 
-class Account {}
+
+
+class Conta(
+    val agencia: String,
+    val numero: String,
+    val saldo: BigDecimal
+) {
+    fun deposito(valor: BigDecimal) {}
+
+    fun saque(valor: BigDecimal) {}
+}
+
+
 
 
 fun main() {
