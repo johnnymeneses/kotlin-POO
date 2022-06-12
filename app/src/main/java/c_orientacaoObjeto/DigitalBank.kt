@@ -24,8 +24,12 @@ class Pessoa {
 
 }
 
-class Bank {}
 
+//Dataclass: Armazenar dados que uma vez inicializados, nao podemos mudá-lo | armazer o estado do objeto
+data class Banco (
+    val nome: String,
+    val numero: Int
+        )
 
 
 class Conta(
@@ -38,10 +42,7 @@ class Conta(
     fun saque(valor: BigDecimal) {}
 }
 
-
-
-
-fun main() {
+fun imprimeDadosPessoa(){
     println("DigitalBank App")
 
     val cliente = Pessoa()
@@ -56,11 +57,33 @@ fun main() {
 
     println(cliente.uneNomeCPF())
 
-
 //    println(cliente.Endereco().rua)
+
+}
+
+fun main() {
+
 
 
 }
 
+//
 
-//Dataclass: Armazenar dados que uma vez inicializados, nao podemos mudá-lo | armazer o estado do objeto
+
+
+
+
+
+//CLASSES DE TESTE
+fun testaBanco(){
+    val digiOne = Banco("DigiOne",123)
+    val digiOne2 = Banco(numero = 12, nome = "DigiOne")
+
+    val banco2 = digiOne.copy(nome="Teste")
+
+    println("${digiOne.nome} e ${digiOne.numero}")
+    println("${digiOne2.nome} e ${digiOne2.numero}")
+    println("${banco2.nome}")
+
+
+}
