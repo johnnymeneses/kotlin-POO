@@ -5,6 +5,6 @@ package d_exercicios_logica
 * */
 
 
-fun desconto(nome: String, valor: Double, desconto: Double){
+fun Ex25(nome: String, valor: Double, desconto: Double){
     println("O desconto para o produto $nome é de ${valor*(desconto/100)}%")
 }
