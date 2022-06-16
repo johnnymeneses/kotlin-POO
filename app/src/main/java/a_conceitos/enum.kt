@@ -46,3 +46,35 @@ fun enum() {
     }
 
 }
+
+
+enum class  ClienteTipo(val descrição: String){
+    PF("Pessoa Fisica"),
+    PJ("Pessoa Juridica")
+}
+
+
+
+fun testaEnum(){
+
+    //TIPO
+    ClienteTipo.values().forEach{
+        println(it.name)
+        println(it.name.length)
+        println(it.name.plus("s"))
+    }
+
+    //Descrição
+}
+
+
+fun testaEnum2(){
+
+    ClienteTipo.values().forEach {
+      println(("${it.name} + ${it.descrição}"))
+    }
+}
+
+fun main(){
+    testaEnum2()
+}

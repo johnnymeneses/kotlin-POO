@@ -31,11 +31,6 @@ data class Banco (
     val numero: Int
         )
 
-enum class  ClienteTipo(descrição: String){
-    PF("Pessoa Fisica"),
-    PJ("Pessoa Juridica")
-}
-
 
 
 class Conta(
@@ -69,23 +64,12 @@ fun imprimeDadosPessoa(){
 
 fun main() {
 
-testaEnum()
+
 
 }
 
 //
 
-fun testaEnum(){
-
-    //TIPO
-    ClienteTipo.values().forEach{
-        println(it.name)
-        println(it.name.length)
-        println(it.name.plus("s"))
-    }
-
-    //Descrição
-}
 
 
 
