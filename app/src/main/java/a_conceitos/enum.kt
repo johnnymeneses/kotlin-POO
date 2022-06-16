@@ -76,5 +76,13 @@ fun testaEnum2(){
 }
 
 fun main(){
-    testaEnum2()
+
+    val pf = ClienteTipo.PF
+    println(("${pf.name} + ${pf.descrição}"))
+
+    val pj = ClienteTipo.PJ
+    println(("${pj.name} + ${pj.descrição}"))
+
+
+
 }
