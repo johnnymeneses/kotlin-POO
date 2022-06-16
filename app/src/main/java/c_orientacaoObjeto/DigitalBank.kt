@@ -26,11 +26,10 @@ class Pessoa {
 
 
 //Dataclass: Armazenar dados que uma vez inicializados, nao podemos mudá-lo | armazer o estado do objeto
-data class Banco (
+data class Banco(
     val nome: String,
     val numero: Int
-        )
-
+)
 
 
 class Conta(
@@ -43,7 +42,7 @@ class Conta(
     fun saque(valor: BigDecimal) {}
 }
 
-fun imprimeDadosPessoa(){
+fun imprimeDadosPessoa() {
     println("DigitalBank App")
 
     val cliente = Pessoa()
@@ -62,28 +61,44 @@ fun imprimeDadosPessoa(){
 
 }
 
-fun main() {
-
-
-
-}
 
 //
 
 
-
-
-
 //CLASSES DE TESTE
-fun testaBanco(){
-    val digiOne = Banco("DigiOne",123)
+fun testaBanco() {
+    val digiOne = Banco("DigiOne", 123)
     val digiOne2 = Banco(numero = 12, nome = "DigiOne")
 
-    val banco2 = digiOne.copy(nome="Teste")
+    val banco2 = digiOne.copy(nome = "Teste")
 
     println("${digiOne.nome} e ${digiOne.numero}")
     println("${digiOne2.nome} e ${digiOne2.numero}")
     println("${banco2.nome}")
 
+
+}
+
+
+//abstracao
+//Uma classe abstrata nao pode ser implementada
+abstract class Pess(
+    open val nomeDigital: String,
+    open val cpfDigital: String
+)
+
+abstract class Funcc(
+    val nameDigital: String,
+    val cgcDigital: String,
+    val salarioDigital: BigDecimal
+) : Pess(nameDigital, cgcDigital) {
+
+    abstract fun calculaAuxilio()
+
+}
+
+
+
+fun main() {
 
 }

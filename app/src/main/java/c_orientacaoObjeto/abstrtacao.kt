@@ -1,5 +1,25 @@
 package c_orientacaoObjeto
 
+//Conceito:
+
+//Utilização
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Mamifero - Animal
 
 abstract class Mamifero(var nome:String){ // Cla
