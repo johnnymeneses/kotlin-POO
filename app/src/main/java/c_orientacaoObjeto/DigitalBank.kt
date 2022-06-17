@@ -90,13 +90,20 @@ abstract class Pess(
 abstract class Funcc(
     val nameDigital: String,
     val cgcDigital: String,
-    val salarioDigital: BigDecimal
+    val salarioDigital: Double
 ) : Pess(nameDigital, cgcDigital) {
 
-    abstract fun calculaAuxilio()
+    protected abstract fun calculaAuxilio()
 
 }
 
+class AnalistaDigital(nomeA: String, cpfA: String, salarioA: Double) : Funcc(nomeA, cpfA, salarioA) {
+    
+    override fun calculaAuxilio() {
+        TODO("Not yet implemented")
+    }
+
+}
 
 
 fun main() {
