@@ -1,5 +1,6 @@
 package c_orientacaoObjeto
 
+import a_conceitos.ClienteTipo
 import java.math.BigDecimal
 
 
@@ -104,6 +105,11 @@ abstract class Funcc(
 
 }
 
+//toda interface é abstrata
+interface Logavel {
+    fun login(): Boolean
+}
+
 class AnalistaDigital(nomeA: String, cpfA: String, salarioA: Double) :
     Funcc(nomeA, cpfA, salarioA) {
 
@@ -111,23 +117,60 @@ class AnalistaDigital(nomeA: String, cpfA: String, salarioA: Double) :
 }
 
 
-class GerenteDigital(nomeG: String, cpfG: String, salarioG: Double) :
-    Funcc(nomeG, cpfG, salarioG) {
+class GerenteDigital(nomeG: String, cpfG: String, salarioG: Double, val senha: String) :
+    Funcc(nomeG, cpfG, salarioG), Logavel {
 
-    override fun calculaAuxilio(): Double  = salarioFunc * 0.3
+    override fun calculaAuxilio(): Double = salarioFunc * 0.3
+
+    override fun login(): Boolean = "123" == senha
+
+    override fun toString(): String = """
+        Nome: $nomeFunc
+        CPF: $cpfFunc
+        Salario: $salarioFunc
+        Auxilio: ${calculaAuxilio()}
+        Senha: $senha
+    """.trimIndent()
 
 }
 
 
-fun imprimeDados(funcionario: Funcc) = println(funcionario.toString())
+class ClienteDigio(
+    nomeCliente: String,
+    cpfCLiente: String,
+    val clienteTipo: ClienteTipo,
+    val senha: String
+) : Pess(nomeCliente, cpfCLiente), Logavel {
+
+    override fun login(): Boolean = "123" == "senha"
+
+    override fun toString(): String = """
+        Nome: $nomePessoa
+        CPF: $cpfPessoa
+        Cliente Tipo ${clienteTipo.descrição}
+
+    """.trimIndent()
+
+}
+
+fun imprimeDados(pessoa: Pess) = println(pessoa.toString())
+
+fun autentica(logavel: Logavel) = println(logavel.login())
+
 
 fun main() {
 
     val joao = AnalistaDigital("Joao", "123456", 500.0)
-    val pedro = GerenteDigital("Pedro","456789",1000.0)
+    val pedro = GerenteDigital("Pedro", "456789", 1000.0, "123")
+    val lais = ClienteDigio("Lais", "12345", ClienteTipo.PF, "1234")
 
     imprimeDados(joao)
+    println("")
     imprimeDados(pedro)
+    autentica(pedro)
+    println("")
+    imprimeDados(lais)
+    autentica(lais)
 
 
 }
