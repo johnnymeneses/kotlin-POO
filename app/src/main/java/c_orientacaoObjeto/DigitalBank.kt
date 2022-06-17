@@ -83,29 +83,51 @@ fun testaBanco() {
 //abstracao
 //Uma classe abstrata nao pode ser implementada
 abstract class Pess(
-    open val nomeDigital: String,
-    open val cpfDigital: String
+    open val nomePessoa: String,
+    open val cpfPessoa: String
 )
 
 abstract class Funcc(
-    val nameDigital: String,
-    val cgcDigital: String,
-    val salarioDigital: Double
-) : Pess(nameDigital, cgcDigital) {
+    val nomeFunc: String,
+    val cpfFunc: String,
+    val salarioFunc: Double
+) : Pess(nomeFunc, cpfFunc) {
 
-    protected abstract fun calculaAuxilio()
+    protected abstract fun calculaAuxilio(): Double
+
+    override fun toString(): String = """
+        Nome: $nomeFunc
+        CPF: $cpfFunc
+        Salario: $salarioFunc
+        Auxilio: ${calculaAuxilio()}
+    """.trimIndent()
 
 }
 
-class AnalistaDigital(nomeA: String, cpfA: String, salarioA: Double) : Funcc(nomeA, cpfA, salarioA) {
-    
-    override fun calculaAuxilio() {
-        TODO("Not yet implemented")
-    }
+class AnalistaDigital(nomeA: String, cpfA: String, salarioA: Double) :
+    Funcc(nomeA, cpfA, salarioA) {
+
+    override fun calculaAuxilio(): Double = salarioFunc * 0.1
+}
+
+
+class GerenteDigital(nomeG: String, cpfG: String, salarioG: Double) :
+    Funcc(nomeG, cpfG, salarioG) {
+
+    override fun calculaAuxilio(): Double  = salarioFunc * 0.3
 
 }
 
+
+fun imprimeDados(funcionario: Funcc) = println(funcionario.toString())
 
 fun main() {
+
+    val joao = AnalistaDigital("Joao", "123456", 500.0)
+    val pedro = GerenteDigital("Pedro","456789",1000.0)
+
+    imprimeDados(joao)
+    imprimeDados(pedro)
+
 
 }
