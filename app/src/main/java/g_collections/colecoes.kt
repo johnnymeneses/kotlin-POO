@@ -3,7 +3,7 @@ package g_collections
 data class Receita(val nome: String, val calorias: Int, val ingredientes: List<Ingredientes> = listOf())
 data class Ingredientes(val nome: String, val quantidade: Int)
 
-fun main() {
+fun oldCollection() {
 
     // Cria lista de dados
     val data = listOf(
@@ -142,4 +142,15 @@ fun colecao1(args: Array<String>) {
 //        println(s1.size)
 
 
+}
+
+
+/// BootCamp
+//1 - Collections, Arrays, List, Set, MAP
+//2 - MutableList, MutabçeMap, MutableSet,MutableIterable e Mutablecollection
+//3 - Extension Functions
+
+
+fun main(){
+    println("Collections no Bootcamp")
 }
